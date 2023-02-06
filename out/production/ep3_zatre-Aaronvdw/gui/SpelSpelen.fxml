@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<fx:root fx:id="rootVBox" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="625.0" prefWidth="933.0" type="VBox" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <BorderPane fx:id="bpBord" prefHeight="646.0" prefWidth="933.0">
+         <right>
+            <BorderPane prefHeight="487.0" prefWidth="437.0" BorderPane.alignment="CENTER">
+               <bottom>
+                  <ScrollPane prefHeight="460.0" prefWidth="437.0" BorderPane.alignment="CENTER" />
+               </bottom>
+               <top>
+                  <GridPane alignment="CENTER" gridLinesVisible="true" BorderPane.alignment="CENTER">
+                    <columnConstraints>
+                      <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                      <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                    </columnConstraints>
+                    <rowConstraints>
+                      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                    </rowConstraints>
+                     <children>
+                        <Label alignment="CENTER" prefHeight="17.0" prefWidth="92.0" text="x2" />
+                        <Label alignment="CENTER" prefHeight="17.0" prefWidth="91.0" text="10" GridPane.columnIndex="1" />
+                        <Label alignment="CENTER" prefHeight="17.0" prefWidth="92.0" text="11" GridPane.columnIndex="2" />
+                        <Label alignment="CENTER" prefHeight="17.0" prefWidth="148.0" text="12" GridPane.columnIndex="3" />
+                        <Label alignment="CENTER" prefHeight="17.0" prefWidth="161.0" text="Bonus" GridPane.columnIndex="4" />
+                     </children>
+                  </GridPane>
+               </top>
+            </BorderPane>
+         </right></BorderPane>
+      <BorderPane fx:id="bpBottom" prefHeight="298.0" prefWidth="933.0">
+         <right>
+            <BorderPane prefHeight="130.0" prefWidth="450.0" BorderPane.alignment="CENTER">
+               <top>
+                  <Label fx:id="lblSpeler" text="Speler" BorderPane.alignment="CENTER" />
+               </top>
+               <bottom>
+                  <Button fx:id="btnEndGame" mnemonicParsing="false" text="End turn" BorderPane.alignment="CENTER" />
+               </bottom></BorderPane>
+         </right>
+         <left>
+            <BorderPane prefHeight="139.0" prefWidth="483.0" BorderPane.alignment="CENTER">
+               <top>
+                  <Label fx:id="lblUitleg" alignment="CENTER" contentDisplay="CENTER" prefHeight="49.0" prefWidth="500.0" text="Uitleg" BorderPane.alignment="CENTER" />
+               </top>
+               <center>
+                  <GridPane fx:id="gpSteentjes" gridLinesVisible="true" prefHeight="68.0" prefWidth="483.0" BorderPane.alignment="CENTER">
+                    <columnConstraints>
+                      <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                      <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                    </columnConstraints>
+                    <rowConstraints>
+                      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                    </rowConstraints>
+                  </GridPane>
+               </center>
+               <left>
+                  <Label fx:id="lblSteentjes" prefHeight="17.0" prefWidth="81.0" text="Steentjes" BorderPane.alignment="CENTER" />
+               </left>
+               <bottom>
+                  <GridPane fx:id="gpButtons" alignment="CENTER" BorderPane.alignment="CENTER">
+                    <columnConstraints>
+                      <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                      <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                    </columnConstraints>
+                    <rowConstraints>
+                      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                    </rowConstraints>
+                  </GridPane>
+               </bottom></BorderPane>
+         </left></BorderPane>
+   </children>
+</fx:root>

@@ -1,0 +1,315 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>C:/Users/Aaron/IdeaProjects/ep3_zatre-Aaronvdw</OriginalElement>
+  <nodes>
+    <node x="2.5970873786407083" y="51.5">domein.Steentje</node>
+    <node x="390.26820388349506" y="2221.0">main.StartUp</node>
+    <node x="450.32888349514553" y="234.0">domein.Speler</node>
+    <node x="475.625" y="1051.5">domein.SpelerRepository</node>
+    <node x="312.76820388349506" y="497.0">test.domein.SpelerTest</node>
+    <node x="216.76820388349506" y="1961.0">ui.ZatreApplicatie</node>
+    <node x="-284.37108610169497" y="1938.5">gui.SpelSpelenController</node>
+    <node x="-123.50000000000006" y="508.0">domein.Vakje</node>
+    <node x="446.32888349514553" y="-15.0">domein.ScoreBlad</node>
+    <node x="1202.625" y="-15.0">gui.StartScherm</node>
+    <node x="77.51820388349506" y="2221.0">gui.RegistreerEnSelecteerController</node>
+    <node x="1009.625" y="-15.0">persistentie.Connectie</node>
+    <node x="604.7682038834951" y="530.0">persistentie.SpelerMapper</node>
+    <node x="331.76820388349506" y="1478.0">domein.DomeinController</node>
+    <node x="6.518203883495062" y="765.0">domein.Spel</node>
+    <node x="133.01820388349506" y="2325.0">main.StartUpGUI</node>
+    <node x="681.625" y="1075.0">exceptions.OnvoldoendeKredietException</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="domein.Spel" target="domein.Steentje" relationship="CREATE">
+      <point x="-67.25" y="-324.5" />
+      <point x="73.76820388349506" y="743.0" />
+      <point x="-57.77791262135929" y="743.0" />
+      <point x="-57.77791262135929" y="733.0" />
+      <point x="-134.00000000000006" y="733.0" />
+      <point x="-134.00000000000006" y="203.0" />
+      <point x="28.09708737864071" y="203.0" />
+      <point x="-25.5" y="27.0" />
+    </edge>
+    <edge source="domein.SpelerRepository" target="domein.Speler" relationship="TO_MANY">
+      <point x="-46.5" y="-38.0" />
+      <point x="522.125" y="743.0" />
+      <point x="296.51820388349506" y="743.0" />
+      <point x="296.51820388349506" y="475.0" />
+      <point x="338.7099514563106" y="475.0" />
+      <point x="338.7099514563106" y="465.0" />
+      <point x="496.82888349514553" y="465.0" />
+      <point x="-46.5" y="104.5" />
+    </edge>
+    <edge source="main.StartUp" target="ui.ZatreApplicatie" relationship="CREATE">
+      <point x="0.0" y="-27.0" />
+      <point x="464.76820388349506" y="2190.0" />
+      <point x="303.76820388349506" y="2190.0" />
+      <point x="0.0" y="104.0" />
+    </edge>
+    <edge source="domein.DomeinController" target="domein.Spel" relationship="CREATE">
+      <point x="66.5" y="-214.5" />
+      <point x="531.2682038834951" y="1456.0" />
+      <point x="718.76213592233" y="1456.0" />
+      <point x="718.76213592233" y="1436.0" />
+      <point x="208.26820388349506" y="1436.0" />
+      <point x="67.25" y="324.5" />
+    </edge>
+    <edge source="domein.Spel" target="persistentie.SpelerMapper" relationship="TO_ONE">
+      <point x="67.25" y="-324.5" />
+      <point x="208.26820388349506" y="713.0" />
+      <point x="480.26820388349506" y="713.0" />
+      <point x="480.26820388349506" y="703.0" />
+      <point x="659.2682038834951" y="703.0" />
+      <point x="-54.5" y="49.0" />
+    </edge>
+    <edge source="main.StartUp" target="domein.DomeinController" relationship="CREATE">
+      <point x="0.0" y="-27.0" />
+      <point x="464.76820388349506" y="2190.0" />
+      <point x="513.5182038834951" y="2190.0" />
+      <point x="513.5182038834951" y="1929.0" />
+      <point x="531.2682038834951" y="1929.0" />
+      <point x="66.5" y="214.5" />
+    </edge>
+    <edge source="ui.ZatreApplicatie" target="domein.DomeinController" relationship="TO_ONE">
+      <point x="0.0" y="-104.0" />
+      <point x="303.76820388349506" y="1929.0" />
+      <point x="398.26820388349506" y="1929.0" />
+      <point x="-66.5" y="214.5" />
+    </edge>
+    <edge source="domein.Spel" target="domein.Speler" relationship="TO_MANY">
+      <point x="67.25" y="-324.5" />
+      <point x="208.26820388349506" y="703.0" />
+      <point x="236.76820388349506" y="703.0" />
+      <point x="236.76820388349506" y="475.0" />
+      <point x="338.7099514563106" y="475.0" />
+      <point x="338.7099514563106" y="465.0" />
+      <point x="496.82888349514553" y="465.0" />
+      <point x="-46.5" y="104.5" />
+    </edge>
+    <edge source="main.StartUpGUI" target="gui.RegistreerEnSelecteerController" relationship="CREATE">
+      <point x="0.0" y="-38.0" />
+      <point x="0.0" y="27.0" />
+    </edge>
+    <edge source="gui.RegistreerEnSelecteerController" target="domein.DomeinController" relationship="CREATE">
+      <point x="0.0" y="-27.0" />
+      <point x="207.51820388349506" y="2200.0" />
+      <point x="401.26820388349506" y="2200.0" />
+      <point x="401.26820388349506" y="1939.0" />
+      <point x="513.5182038834951" y="1939.0" />
+      <point x="513.5182038834951" y="1929.0" />
+      <point x="531.2682038834951" y="1929.0" />
+      <point x="66.5" y="214.5" />
+    </edge>
+    <edge source="domein.SpelerRepository" target="persistentie.SpelerMapper" relationship="TO_ONE">
+      <point x="-46.5" y="-38.0" />
+      <point x="522.125" y="743.0" />
+      <point x="296.51820388349506" y="743.0" />
+      <point x="296.51820388349506" y="723.0" />
+      <point x="480.26820388349506" y="723.0" />
+      <point x="480.26820388349506" y="703.0" />
+      <point x="659.2682038834951" y="703.0" />
+      <point x="-54.5" y="49.0" />
+    </edge>
+    <edge source="domein.Speler" target="domein.ScoreBlad" relationship="CREATE">
+      <point x="46.5" y="-104.5" />
+      <point x="589.8288834951455" y="213.0" />
+      <point x="591.8288834951455" y="213.0" />
+      <point x="48.5" y="93.5" />
+    </edge>
+    <edge source="gui.SpelSpelenController" target="domein.DomeinController" relationship="TO_ONE">
+      <point x="0.0" y="-14.5" />
+      <point x="-22.500000000000057" y="2050.5" />
+      <point x="-22.500000000000057" y="1939.0" />
+      <point x="303.76820388349506" y="1939.0" />
+      <point x="303.76820388349506" y="1929.0" />
+      <point x="398.26820388349506" y="1929.0" />
+      <point x="-66.5" y="214.5" />
+    </edge>
+    <edge source="domein.DomeinController" target="persistentie.SpelerMapper" relationship="TO_ONE">
+      <point x="-66.5" y="-214.5" />
+      <point x="398.26820388349506" y="1456.0" />
+      <point x="296.51820388349506" y="1456.0" />
+      <point x="296.51820388349506" y="1446.0" />
+      <point x="361.875" y="1446.0" />
+      <point x="361.875" y="733.0" />
+      <point x="480.26820388349506" y="733.0" />
+      <point x="480.26820388349506" y="703.0" />
+      <point x="659.2682038834951" y="703.0" />
+      <point x="-54.5" y="49.0" />
+    </edge>
+    <edge source="test.domein.SpelerTest" target="domein.Speler" relationship="TO_ONE">
+      <point x="-68.0" y="-82.0" />
+      <point x="380.76820388349506" y="475.0" />
+      <point x="338.7099514563106" y="475.0" />
+      <point x="338.7099514563106" y="465.0" />
+      <point x="496.82888349514553" y="465.0" />
+      <point x="-46.5" y="104.5" />
+    </edge>
+    <edge source="domein.Vakje" target="domein.Steentje" relationship="TO_ONE">
+      <point x="0.0" y="-71.0" />
+      <point x="-27.500000000000057" y="213.0" />
+      <point x="185.76213592233" y="213.0" />
+      <point x="185.76213592233" y="193.0" />
+      <point x="79.09708737864071" y="193.0" />
+      <point x="25.5" y="27.0" />
+    </edge>
+    <edge source="domein.Speler" target="domein.ScoreBlad" relationship="TO_ONE">
+      <point x="-46.5" y="-104.5" />
+      <point x="496.82888349514553" y="213.0" />
+      <point x="538.3288834951455" y="213.0" />
+      <point x="538.3288834951455" y="193.0" />
+      <point x="494.82888349514553" y="193.0" />
+      <point x="-48.5" y="93.5" />
+    </edge>
+    <edge source="gui.RegistreerEnSelecteerController" target="gui.SpelSpelenController" relationship="CREATE">
+      <point x="0.0" y="-27.0" />
+      <point x="207.51820388349506" y="2200.0" />
+      <point x="-165.37108610169497" y="2200.0" />
+      <point x="0.0" y="14.5" />
+    </edge>
+    <edge source="domein.DomeinController" target="domein.Speler" relationship="CREATE">
+      <point x="66.5" y="-214.5" />
+      <point x="531.2682038834951" y="1456.0" />
+      <point x="718.76213592233" y="1456.0" />
+      <point x="718.76213592233" y="1436.0" />
+      <point x="964.625" y="1436.0" />
+      <point x="964.625" y="475.0" />
+      <point x="754.3288834951455" y="475.0" />
+      <point x="754.3288834951455" y="465.0" />
+      <point x="589.8288834951455" y="465.0" />
+      <point x="46.5" y="104.5" />
+    </edge>
+    <edge source="domein.Speler" target="domein.Steentje" relationship="TO_MANY">
+      <point x="-46.5" y="-104.5" />
+      <point x="496.82888349514553" y="213.0" />
+      <point x="538.3288834951455" y="213.0" />
+      <point x="538.3288834951455" y="203.0" />
+      <point x="185.76213592233" y="203.0" />
+      <point x="185.76213592233" y="193.0" />
+      <point x="79.09708737864071" y="193.0" />
+      <point x="25.5" y="27.0" />
+    </edge>
+    <edge source="domein.Spel" target="domein.Vakje" relationship="CREATE">
+      <point x="-67.25" y="-324.5" />
+      <point x="73.76820388349506" y="743.0" />
+      <point x="-57.77791262135929" y="743.0" />
+      <point x="-57.77791262135929" y="733.0" />
+      <point x="-75.50000000000006" y="733.0" />
+      <point x="-48.0" y="71.0" />
+    </edge>
+    <edge source="gui.SpelSpelenController" target="domein.Vakje" relationship="TO_MANY">
+      <point x="0.0" y="-14.5" />
+      <point x="-165.37108610169497" y="683.0" />
+      <point x="20.499999999999943" y="683.0" />
+      <point x="48.0" y="71.0" />
+    </edge>
+    <edge source="domein.SpelerRepository" target="persistentie.SpelerMapper" relationship="CREATE">
+      <point x="46.5" y="-38.0" />
+      <point x="615.125" y="743.0" />
+      <point x="773.625" y="743.0" />
+      <point x="773.625" y="733.0" />
+      <point x="768.2682038834951" y="733.0" />
+      <point x="54.5" y="49.0" />
+    </edge>
+    <edge source="domein.DomeinController" target="domein.Spel" relationship="TO_ONE">
+      <point x="-66.5" y="-214.5" />
+      <point x="398.26820388349506" y="1456.0" />
+      <point x="296.51820388349506" y="1456.0" />
+      <point x="296.51820388349506" y="1446.0" />
+      <point x="73.76820388349506" y="1446.0" />
+      <point x="-67.25" y="324.5" />
+    </edge>
+    <edge source="domein.DomeinController" target="domein.SpelerRepository" relationship="TO_ONE">
+      <point x="-66.5" y="-214.5" />
+      <point x="398.26820388349506" y="1456.0" />
+      <point x="296.51820388349506" y="1456.0" />
+      <point x="296.51820388349506" y="1446.0" />
+      <point x="522.125" y="1446.0" />
+      <point x="-46.5" y="38.0" />
+    </edge>
+    <edge source="domein.DomeinController" target="persistentie.SpelerMapper" relationship="CREATE">
+      <point x="66.5" y="-214.5" />
+      <point x="531.2682038834951" y="1456.0" />
+      <point x="718.76213592233" y="1456.0" />
+      <point x="718.76213592233" y="1436.0" />
+      <point x="932.125" y="1436.0" />
+      <point x="932.125" y="743.0" />
+      <point x="773.625" y="743.0" />
+      <point x="773.625" y="733.0" />
+      <point x="768.2682038834951" y="733.0" />
+      <point x="54.5" y="49.0" />
+    </edge>
+    <edge source="domein.DomeinController" target="domein.Speler" relationship="TO_MANY">
+      <point x="-66.5" y="-214.5" />
+      <point x="398.26820388349506" y="1456.0" />
+      <point x="296.51820388349506" y="1456.0" />
+      <point x="296.51820388349506" y="1446.0" />
+      <point x="286.01820388349506" y="1446.0" />
+      <point x="286.01820388349506" y="475.0" />
+      <point x="338.7099514563106" y="475.0" />
+      <point x="338.7099514563106" y="465.0" />
+      <point x="496.82888349514553" y="465.0" />
+      <point x="-46.5" y="104.5" />
+    </edge>
+    <edge source="test.domein.SpelerTest" target="domein.Speler" relationship="CREATE">
+      <point x="68.0" y="-82.0" />
+      <point x="516.7682038834951" y="475.0" />
+      <point x="754.3288834951455" y="475.0" />
+      <point x="754.3288834951455" y="465.0" />
+      <point x="589.8288834951455" y="465.0" />
+      <point x="46.5" y="104.5" />
+    </edge>
+    <edge source="domein.DomeinController" target="domein.SpelerRepository" relationship="CREATE">
+      <point x="66.5" y="-214.5" />
+      <point x="531.2682038834951" y="1456.0" />
+      <point x="718.76213592233" y="1456.0" />
+      <point x="718.76213592233" y="1436.0" />
+      <point x="615.125" y="1436.0" />
+      <point x="46.5" y="38.0" />
+    </edge>
+    <edge source="domein.Spel" target="domein.Steentje" relationship="TO_MANY">
+      <point x="67.25" y="-324.5" />
+      <point x="208.26820388349506" y="213.0" />
+      <point x="185.76213592233" y="213.0" />
+      <point x="185.76213592233" y="193.0" />
+      <point x="79.09708737864071" y="193.0" />
+      <point x="25.5" y="27.0" />
+    </edge>
+    <edge source="domein.DomeinController" target="exceptions.OnvoldoendeKredietException" relationship="CREATE">
+      <point x="66.5" y="-214.5" />
+      <point x="531.2682038834951" y="1456.0" />
+      <point x="718.76213592233" y="1456.0" />
+      <point x="718.76213592233" y="1436.0" />
+      <point x="801.625" y="1436.0" />
+      <point x="0.0" y="14.5" />
+    </edge>
+    <edge source="domein.Spel" target="domein.Vakje" relationship="TO_MANY">
+      <point x="67.25" y="-324.5" />
+      <point x="208.26820388349506" y="693.0" />
+      <point x="-22.500000000000057" y="693.0" />
+      <point x="-22.500000000000057" y="683.0" />
+      <point x="20.499999999999943" y="683.0" />
+      <point x="48.0" y="71.0" />
+    </edge>
+    <edge source="persistentie.SpelerMapper" target="domein.Speler" relationship="CREATE">
+      <point x="0.0" y="-49.0" />
+      <point x="713.7682038834951" y="475.0" />
+      <point x="754.3288834951455" y="475.0" />
+      <point x="754.3288834951455" y="465.0" />
+      <point x="589.8288834951455" y="465.0" />
+      <point x="46.5" y="104.5" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic" zoom="0.8869640932881773" showDependencies="true" x="134.3945437288122" y="1787.4850549152543" />
+  <SelectedNodes />
+  <Categories>
+    <Category>Methods</Category>
+    <Category>Properties</Category>
+  </Categories>
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+
